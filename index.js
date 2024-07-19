@@ -108,7 +108,7 @@ function checkout(){
         return;
     }
     sumOfPrice=cart.reduce((total, item) => total + item.product.price * item.quantity, 0)
-    alert(`Customer ID: ${customer.name}\nPayment Method : ${paymentMethod.name}\nOrder Total: `+sumOfPrice.toLocaleString('it-IT', {style : 'currency', currency : 'VND'}));
+    alert(`Customer Name: ${customer.name}\nPayment Method : ${paymentMethod.name}\nOrder Total: `+sumOfPrice.toLocaleString('it-IT', {style : 'currency', currency : 'VND'}));
     clearCart()
 }
 window.onload = () => {
