@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Mall Center</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Shopping Cart</h1>
+    <div class="products">
+      <h1 id="product-heading">Products</h1>
+      <ul id="product-list">
+
+      </ul>
+    </div>
+    <div class="cart">
+      <h1>My Cart</h1>
+      <ul id="cart-list">
+
+      </ul>
+      <button class="button" onclick="clearCart()">Clear cart</button>
+    </div><br>
+    <div class="checkout">
+      <label for="customer">Select customer: </label>
+      <select  id="customer">
+
+      </select>
+      <br><br>
+      <label for="payment-method">Select payment:</label>
+      <select  id="payment-method">
+
+      </select>
+      <br><br>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
